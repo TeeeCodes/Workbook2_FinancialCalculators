@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Calculators</title>
+    <!-- <link rel="stylesheet" href="/styles/mortgageCalculator.css" /> -->
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Mortgage Calculator</a>
+      <a href="/futureValueCalculator.html">Future Value Calculator</a>
+      <a href="/presentValueAnnuityCalculator.html"
+        >Present Value Annuity Calculator</a
+      >
+    </nav>
+    <div id="parentContainer">
+      <h1>Mortgage Calculator</h1>
+
+      <form id="calcForm">
+        <p>Principal: <input type="text" id="principalField" /></p>
+        <p>Interest Rate: <input type="text" id="interestField" /></p>
+
+        <select id="loanField">
+          <option>15</option>
+          <option>30</option>
+        </select>
+
+        <p>Mortgage: <input type="number" id="mortgageField" readonly /></p>
+        <p>Interest: <input type="number" id="TotalField" readonly /></p>
+
+        <input type="button" value="Calculate" id="calcBtn" />
+      </form>
+    </div>
+
     <script src="scripts/mortgageCalculator.js"></script>
-</body>
+  </body>
 </html>
